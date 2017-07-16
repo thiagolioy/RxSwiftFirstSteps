@@ -6,7 +6,7 @@ target 'RxSwiftFirstSteps' do
   use_frameworks!
 
   # Pods for RxSwiftFirstSteps
-    pod 'RxSwift',    '~> 3.0'
-    pod 'RxCocoa',    '~> 3.0'
+    pod 'RxSwift'
+    pod 'RxCocoa'
 
 end

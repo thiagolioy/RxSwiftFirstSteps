@@ -9,5 +9,23 @@
 import UIKit
 
 class RegularViewController: UIViewController {
-
+    
+    @IBOutlet var priceLabel: UILabel!
+    @IBOutlet var priceSlider: UISlider!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupPriceEvent()
+    }
+    
+    func setupPriceEvent() {
+        priceSlider.addTarget(self, action: #selector(priceSliderChanged), for: .valueChanged)
+    }
+    
+    @objc
+    func priceSliderChanged(_ sender: UISlider) {
+        let formattedPrice = CurrencyFormatter.shared.format(sender.value)
+        priceLabel.text = formattedPrice
+    }
+    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A592F9F1F1BDB8F0000D1F0 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A592F9E1F1BDB8F0000D1F0 /* CurrencyFormatter.swift */; };
 		0ABBF2EA1F1BC05C001119BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABBF2E91F1BC05C001119BB /* AppDelegate.swift */; };
 		0ABBF2EF1F1BC05C001119BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABBF2ED1F1BC05C001119BB /* Main.storyboard */; };
 		0ABBF2F11F1BC05C001119BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABBF2F01F1BC05C001119BB /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A592F9E1F1BDB8F0000D1F0 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		0ABBF2E61F1BC05C001119BB /* RxSwiftFirstSteps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftFirstSteps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABBF2E91F1BC05C001119BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ABBF2EE1F1BC05C001119BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				0ABBF2F01F1BC05C001119BB /* Assets.xcassets */,
 				0ABBF2F21F1BC05C001119BB /* LaunchScreen.storyboard */,
 				0ABBF2F51F1BC05C001119BB /* Info.plist */,
+				0A592F9E1F1BDB8F0000D1F0 /* CurrencyFormatter.swift */,
 			);
 			path = RxSwiftFirstSteps;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ABBF3001F1BC4FA001119BB /* RegularViewController.swift in Sources */,
+				0A592F9F1F1BDB8F0000D1F0 /* CurrencyFormatter.swift in Sources */,
 				0ABBF2FE1F1BC4D7001119BB /* RxSwiftViewController.swift in Sources */,
 				0ABBF2EA1F1BC05C001119BB /* AppDelegate.swift in Sources */,
 			);
