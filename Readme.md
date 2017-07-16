@@ -1,10 +1,7 @@
 # Marvel App
 
 [![Twitter: @tplioy](https://img.shields.io/badge/contact-@tplioy-blue.svg?style=flat)](https://twitter.com/tplioy)
-[![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/thiagolioy/marvelapp/blob/master/LICENSE)
-[![GitHub forks](https://img.shields.io/github/forks/thiagolioy/marvelapp.svg)](https://github.com/thiagolioy/marvelapp/network)
-[![GitHub stars](https://img.shields.io/github/stars/thiagolioy/marvelapp.svg)](https://github.com/thiagolioy/marvelapp/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/thiagolioy/marvelapp.svg)](https://github.com/thiagolioy/marvelapp/issues)
+[![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/thiagolioy/RxSwiftFirstSteps/blob/master/LICENSE)
 
 -------
 <p align="center">
