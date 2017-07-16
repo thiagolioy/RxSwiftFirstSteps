@@ -11,6 +11,8 @@
 		0ABBF2EF1F1BC05C001119BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABBF2ED1F1BC05C001119BB /* Main.storyboard */; };
 		0ABBF2F11F1BC05C001119BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABBF2F01F1BC05C001119BB /* Assets.xcassets */; };
 		0ABBF2F41F1BC05C001119BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABBF2F21F1BC05C001119BB /* LaunchScreen.storyboard */; };
+		0ABBF2FE1F1BC4D7001119BB /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABBF2FD1F1BC4D7001119BB /* RxSwiftViewController.swift */; };
+		0ABBF3001F1BC4FA001119BB /* RegularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABBF2FF1F1BC4FA001119BB /* RegularViewController.swift */; };
 		D9FF4E6C324EC8C89CA18AE3 /* Pods_RxSwiftFirstSteps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA42764067A175148826801F /* Pods_RxSwiftFirstSteps.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +23,8 @@
 		0ABBF2F01F1BC05C001119BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ABBF2F31F1BC05C001119BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ABBF2F51F1BC05C001119BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ABBF2FD1F1BC4D7001119BB /* RxSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
+		0ABBF2FF1F1BC4FA001119BB /* RegularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularViewController.swift; sourceTree = "<group>"; };
 		6408383582C2FDCDC98A6682 /* Pods-RxSwiftFirstSteps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftFirstSteps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftFirstSteps/Pods-RxSwiftFirstSteps.debug.xcconfig"; sourceTree = "<group>"; };
 		BA42764067A175148826801F /* Pods_RxSwiftFirstSteps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftFirstSteps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FA103583565FF46A36FFCE /* Pods-RxSwiftFirstSteps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftFirstSteps.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftFirstSteps/Pods-RxSwiftFirstSteps.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		0ABBF2E81F1BC05C001119BB /* RxSwiftFirstSteps */ = {
 			isa = PBXGroup;
 			children = (
+				0ABBF2FC1F1BC4B5001119BB /* Regular */,
+				0ABBF2FB1F1BC4A9001119BB /* RxSwift */,
 				0ABBF2E91F1BC05C001119BB /* AppDelegate.swift */,
 				0ABBF2ED1F1BC05C001119BB /* Main.storyboard */,
 				0ABBF2F01F1BC05C001119BB /* Assets.xcassets */,
@@ -66,6 +72,22 @@
 				0ABBF2F51F1BC05C001119BB /* Info.plist */,
 			);
 			path = RxSwiftFirstSteps;
+			sourceTree = "<group>";
+		};
+		0ABBF2FB1F1BC4A9001119BB /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				0ABBF2FD1F1BC4D7001119BB /* RxSwiftViewController.swift */,
+			);
+			name = RxSwift;
+			sourceTree = "<group>";
+		};
+		0ABBF2FC1F1BC4B5001119BB /* Regular */ = {
+			isa = PBXGroup;
+			children = (
+				0ABBF2FF1F1BC4FA001119BB /* RegularViewController.swift */,
+			);
+			name = Regular;
 			sourceTree = "<group>";
 		};
 		30229AAF1A13558AF6F71D73 /* Frameworks */ = {
@@ -209,6 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ABBF3001F1BC4FA001119BB /* RegularViewController.swift in Sources */,
+				0ABBF2FE1F1BC4D7001119BB /* RxSwiftViewController.swift in Sources */,
 				0ABBF2EA1F1BC05C001119BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J5P786SDN2;
 				INFOPLIST_FILE = RxSwiftFirstSteps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.RxSwiftFirstSteps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,6 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J5P786SDN2;
 				INFOPLIST_FILE = RxSwiftFirstSteps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tplioy.RxSwiftFirstSteps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +401,7 @@
 				0ABBF2FA1F1BC05C001119BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
