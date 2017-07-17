@@ -50,7 +50,7 @@ class RegularViewController: UIViewController {
             let result = lastPrice * lastUnit
             let formattedResult = CurrencyFormatter.shared.format(result)
             
-            print("Big Sell! \(lastUnit) units for \(formattedResult)")
+            print("Big Sale! \(lastUnit) units for \(formattedResult)")
         }
     }
     

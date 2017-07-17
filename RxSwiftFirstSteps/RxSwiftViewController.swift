@@ -54,7 +54,7 @@ class RxSwiftViewController: UIViewController {
             .filter { $0 > 50 && $1 > 50}
             .map{ ($0 * Float($1), $1) }
             .map{(CurrencyFormatter.shared.format($0), $1)}
-            .map{ "Big sell. \($1) units for \($0)" }
+            .map{ "Big Sale. \($1) units for \($0)" }
             .subscribe(onNext: { message in
                 print(message)
             })
