@@ -21,10 +21,10 @@ class RegularViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupPriceEvent()
+        setupEvents()
     }
     
-    func setupPriceEvent() {
+    func setupEvents() {
         priceSlider.addTarget(self, action: #selector(priceSliderChanged), for: .valueChanged)
         
         unitSlider.addTarget(self, action: #selector(unitSliderChanged), for: .valueChanged)
