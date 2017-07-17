@@ -40,18 +40,41 @@
                                     <constraint firstAttribute="height" constant="30" id="kum-II-BmB"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bve-z0-IGU">
+                                <rect key="frame" x="15" y="90" width="345" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVt-oq-Qma">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="20" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="KgB-0R-mNh">
+                                        <rect key="frame" x="123" y="0.0" width="224" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qVt-oq-Qma" firstAttribute="width" secondItem="bve-z0-IGU" secondAttribute="width" multiplier="1:3" id="1MX-3h-43a"/>
+                                    <constraint firstAttribute="height" constant="30" id="fbk-wz-sW5"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.91372549020000005" green="0.77647058820000003" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="52K-jT-UD3" firstAttribute="leading" secondItem="jef-mg-QNv" secondAttribute="leading" constant="15" id="1PF-j5-Bfn"/>
+                            <constraint firstItem="bve-z0-IGU" firstAttribute="leading" secondItem="jef-mg-QNv" secondAttribute="leading" constant="15" id="B1z-KU-2rJ"/>
                             <constraint firstItem="52K-jT-UD3" firstAttribute="top" secondItem="PVd-tb-5Ga" secondAttribute="bottom" constant="20" id="K1a-X7-q42"/>
+                            <constraint firstAttribute="trailing" secondItem="bve-z0-IGU" secondAttribute="trailing" constant="15" id="RFi-pT-ieg"/>
                             <constraint firstAttribute="trailing" secondItem="52K-jT-UD3" secondAttribute="trailing" constant="15" id="awR-p0-RTW"/>
+                            <constraint firstItem="bve-z0-IGU" firstAttribute="top" secondItem="52K-jT-UD3" secondAttribute="bottom" constant="20" id="eBp-zr-LSd"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="No RxSwift" id="j4B-Ck-yCE"/>
                     <connections>
                         <outlet property="priceLabel" destination="9cd-g8-stI" id="usA-Pv-5ut"/>
                         <outlet property="priceSlider" destination="8c3-nh-e2u" id="Eje-Rx-hGQ"/>
+                        <outlet property="unitLabel" destination="qVt-oq-Qma" id="kkV-wo-9hO"/>
+                        <outlet property="unitSlider" destination="KgB-0R-mNh" id="OvP-0e-qoj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nC3-s6-RBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -88,10 +111,32 @@
                                     <constraint firstAttribute="height" constant="30" id="vGL-5d-ITm"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MaQ-le-iWD">
+                                <rect key="frame" x="15" y="90" width="345" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBE-pJ-fyb">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="20" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tH1-AJ-Nfa">
+                                        <rect key="frame" x="123" y="0.0" width="224" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Ym-L6-Z6a"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="YWO-ZN-CkC"/>
+                                    <constraint firstItem="LBE-pJ-fyb" firstAttribute="width" secondItem="MaQ-le-iWD" secondAttribute="width" multiplier="1:3" id="abV-Ed-Hge"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.84457629919999999" green="0.60385793450000003" blue="0.15178263189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eP8-vZ-0tT" firstAttribute="leading" secondItem="6EU-RL-tvd" secondAttribute="leading" constant="15" id="1GK-9e-rIS"/>
+                            <constraint firstItem="MaQ-le-iWD" firstAttribute="leading" secondItem="6EU-RL-tvd" secondAttribute="leading" constant="15" id="2hN-yn-Zch"/>
+                            <constraint firstAttribute="trailing" secondItem="MaQ-le-iWD" secondAttribute="trailing" constant="15" id="Cls-CO-tvH"/>
+                            <constraint firstItem="MaQ-le-iWD" firstAttribute="top" secondItem="eP8-vZ-0tT" secondAttribute="bottom" constant="20" id="DR4-N2-b2m"/>
                             <constraint firstItem="eP8-vZ-0tT" firstAttribute="top" secondItem="nCJ-Th-Pkn" secondAttribute="bottom" constant="20" id="dym-to-8Bj"/>
                             <constraint firstAttribute="trailing" secondItem="eP8-vZ-0tT" secondAttribute="trailing" constant="15" id="xWh-NC-piS"/>
                         </constraints>
@@ -100,6 +145,8 @@
                     <connections>
                         <outlet property="priceLabel" destination="Jk3-9v-qEh" id="4NS-9e-92T"/>
                         <outlet property="priceSlider" destination="tnh-tH-Nuf" id="4Gn-uV-aVF"/>
+                        <outlet property="unitLabel" destination="LBE-pJ-fyb" id="Bca-sN-Bt1"/>
+                        <outlet property="unitSlider" destination="tH1-AJ-Nfa" id="726-bo-EaU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVl-0l-7qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
